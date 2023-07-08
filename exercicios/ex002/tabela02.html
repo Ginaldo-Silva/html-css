@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        caption {
+            border: 1px solid black;
+            font-weight: bold;
+            font-size: 1.5em;
+            padding: 10px;
+            background-color: rgb(240, 233, 233);
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+        }
+
+        td, th {
+            border: 1px solid black;
+            text-align: center;
+            padding: 10px;
+        }
+
+        td.number {
+            text-align: right;
+        }
+
+        thead {
+            background-color: rgb(38, 38, 38);
+            color: white;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: rgb(38, 38, 38);
+            color: white;
+        }
+
+        tbody tr:nth-child(odd) { /* odd = impar / even = par */
+            background-color: lightgray;
+        }
+
+        tfoot {
+            background-color: rgb(38, 38, 38);
+            color: white;
+        }
+    </style>
+    <title>Tabelas</title>
+</head>
+<body>
+    <!--
+        Caption - Titulo ou melhor legenda
+        Tabela
+            thead 
+                tr, td e th
+            tbody
+                tr, td e th
+            tfooter
+                tr, td e th
+    -->
+
+    <h1>Uso de tabelas grandes</h1>
+
+
+    <table>
+        <caption>População das unidades federativas</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
+                <th scope="col">Percentual</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="number">45.919.049</td>
+                <td>21,9%</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="number">21.160.791</td>
+                <td>10,1%</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="number">17.264.943</td>
+                <td>8,2%</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de habitantes:</th>
+                <td class="number"><strong>84.344.783</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
