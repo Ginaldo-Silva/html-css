@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+* {
+    margin: 3px 2px 2px 3px;
+    padding: 3px 2px 2px 3px;
+}
+
+html {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5em;
+    line-height: 1.5em;
+}
+
+menu {
+    display: none;
+}
+
+article {
+    width: 100%;
+}
+
+article::after {
+    content: 'Impresso dia 14/07/2023.';
+    font-size: 0.5em;
+}
