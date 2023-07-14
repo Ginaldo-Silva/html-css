@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media</title>
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/media-querty.css">
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <h1>Meu Site</h1>
         <div id="burguer-container" onclick="ClickMenu()">
@@ -35,6 +36,15 @@
     </main>
 
     <script>
+        function mudouTamanho() {
+            if (window.innerWidth >= 768)
+            {
+                itens.style.display = 'block';
+            } else {
+                itens.style.display = 'none';
+            }
+        }
+
         function ClickMenu() {
             if (menuitens.style.display == 'block') {
                 menuitens.style.display = 'none';
