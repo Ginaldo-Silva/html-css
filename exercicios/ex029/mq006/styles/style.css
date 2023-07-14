@@ -3,6 +3,8 @@
 :root {
     --cor01: #49a09b;
     --cor02: #5f2c82;
+    --cor03:#2a6360;
+    --cor04: #61d1cc;
 }
 
 * {
@@ -27,7 +29,7 @@ section#login {
     position: absolute;
     background-color: white;
     overflow: hidden;
-    width: 250px;
+    width: 300px;
     height: 500px;
     border-radius: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.500);
@@ -60,5 +62,55 @@ div#formulario > h1 {
 }
 
 div#formulario > p {
+    font-size: 0.8em;
+}
+
+form > input[type=submit] {
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    background-color: var(--cor01);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form > input[type=submit]:hover {
+    background-color: var(--cor03)
+}
+
+form > a.botao {
+    display: block;
+    text-align: center;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    background-color: white;
+    border: 1px solid var(--cor01);
+    border-radius: 5px;
+    padding-top: 5px;
+    margin-top: 5px;
+    text-decoration: none;
+    color: black;
+}
+
+form > a.botao:hover {
+    display: block;
+    text-align: center;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    background-color: var(--cor04);
+    border: 1px solid var(--cor01);
+    border-radius: 5px;
+    padding-top: 5px;
+    margin-top: 5px;
+    text-decoration: none;
+    color: white;
+}
+
+form > a.botao > span {
     font-size: 0.8em;
 }
