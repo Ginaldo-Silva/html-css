@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <div id="burguer-container" onclick="ClickMenu()">
+            <img src="img/menu.png" alt="menu">
+        </div>
+        <menu id="menuitens">
+            <ul>
+                <li><a href="#">OPção 01</a></li>
+                <li><a href="#">OPção 02</a></li>
+                <li><a href="#">OPção 03</a></li>
+                <li><a href="#">OPção 04</a></li>
+                <li><a href="#">OPção 05</a></li>
+                <li><a href="#">OPção 06</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2>Testando Media Query</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, dolorum omnis saepe, quod nam neque modi aliquam, perferendis non mollitia porro veniam blanditiis et suscipit molestiae temporibus voluptatem illum ratione.<br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem pariatur quos expedita ducimus velit officiis minus quo deleniti ea aliquam incidunt omnis praesentium ipsam aspernatur, assumenda nostrum. Sit, laborum quisquam.<br>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat alias qui provident sint! Consequatur quasi incidunt quia fugit odio ratione possimus autem. Reiciendis corporis et perspiciatis odio, ab dolorem ipsa? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque veniam dolores voluptas necessitatibus officia nesciunt tenetur, totam, cupiditate quae deserunt quod? Sunt porro ut expedita quibusdam facilis! Deserunt, inventore excepturi! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt nihil mollitia quis voluptatem fuga veritatis repudiandae ratione eaque odio iste rerum quidem tempora libero sint quod perferendis qui, aliquam soluta? Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo voluptates nostrum nulla soluta nisi officia ex, amet nesciunt rerum eligendi, quasi at et nobis expedita ad molestiae voluptas possimus odio?</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae neque quibusdam, magni unde quasi omnis reprehenderit asperiores debitis hic eos odit minus officia harum sequi laborum facere dolores cupiditate? Soluta.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel consequuntur sunt ratione, eius quis quibusdam quas architecto nulla minus nobis repellat enim eveniet, harum nemo dolore aut esse neque unde?</p>
+        </article>
+    </main>
+
+    <script>
+        function ClickMenu() {
+            if (menuitens.style.display == 'block') {
+                menuitens.style.display = 'none';
+            } else {
+                menuitens.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>
